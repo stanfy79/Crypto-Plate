@@ -1,0 +1,440 @@
+#root {
+  --medium-light-text: #bababa;
+  --theme-text: #ffffff;
+  --theme-background: #000000;
+}
+
+body {
+  background: #151515;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* theme toggle button layout */ 
+.knobs,
+  .layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .button {
+    position: relative;
+    display: flex;
+    margin-right: 15px;
+    justify-self: end;
+    width: 40px;
+    min-width: 35px;
+    height: 25px;
+    overflow: hidden;
+  }
+  
+  .checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .knobs {
+    z-index: 2;
+  }
+  
+  .layer {
+    width: 100%;
+    background-color: #a68b8b;
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .button.r,
+  .button.r .layer {
+    border-radius: 40px;
+  }
+  #button-3 .knobs:before {
+    content: "L";
+    position: absolute;
+    transition: all 1s ease-out;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    color: #c80101;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    font-family: sans-serif;
+    line-height: 1;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    -webkit-transition: 1s ease all, left 1s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+    transition: 1s ease all, left 1s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+  }
+  
+  #button-3 .checkbox:active + .knobs:before {
+    width: 46px;
+    border-radius: 100px;
+  }
+  
+  #button-3 .checkbox:checked:active + .knobs:before {
+    margin-left: -26px;
+  }
+  
+  #button-3 .checkbox:checked + .knobs:before {
+    content: "D";
+    color: #00ff0d;
+    right: 0px;
+    left:auto;
+    transition: all 1s ease-out;
+    background-color: #737272b7;
+  }
+  
+  #button-3 .checkbox:checked ~ .layer {
+    background-color: #272727;
+  }
+
+.top-header {
+  display: flex;
+  position: fixed;
+  background: #a301012d;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  align-items: center;
+  padding: 0 10px;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+.app-logo {
+  display: flex;
+  justify-self: baseline;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+.first-menu-section {
+  color: var(--theme-text);
+  display: flex;
+  justify-content: start;
+  width: 50%;
+  margin: 0 13px;
+  span {
+    margin: 0 7px;
+    text-decoration-line: none;
+    color: aqua;
+    font-size: 95%;
+    &:hover {
+      color: #a3c0c4;
+    }
+  }
+  &::after {
+    content: "|";
+    color: #00e1ff;
+  }
+}
+.second-menu-section {
+  color: var(--theme-text);
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  margin: 0 13px;
+  .menu-icon {
+    display: flex;
+    align-self: end;
+    justify-self: end;
+    &:hover .side-menu {
+      display: block;
+    }
+    img {
+      width: 30px;
+    }
+  }
+}
+
+/* Home Page Wrapper  */
+.page-wrapper {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  width: 100%;
+  margin-top: 5%;
+  .side-menu {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    transition: all .7s ease;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid gray;
+    .menu-intro {
+      h2 {
+        color: var(--light-text);
+      }
+      .directions {
+        p {
+          color: #a30101;
+          font-family: Impact;
+        }
+        span {
+          color: var(--medium-light-text);
+        }
+      }
+    }
+  }
+  .main-content {
+    width: 80%;
+    margin-right: 20%;
+    padding: 20px;
+  }
+}
+
+.introductions {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  color: white;
+  background: #490000;
+  font-size:  medium;
+  display: flex;
+  margin: 15px 0;
+  border-radius: 20px;
+}
+.about {
+  color: var(--light-text);
+  line-height: 30px;
+  width: 100%;
+  .app-logo2 {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.listing-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 100px 20px;
+  margin-top: 5em;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100%;
+  .listing-items {
+    width: 100%;
+    position: relative;
+    border: 1px solid #9d222286;
+    border-radius: 20px;
+    height: 400px;
+    color: var(--theme-text);
+    overflow-y: hidden;
+    transition: all .5s ease-in-out;
+    &:hover {
+      box-shadow: 5px 10px 30px #b2020238, -5px -10px 30px #b2020238;
+    }
+    .listing-head {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+      }
+      span {
+        position: absolute;
+        top: 5px;
+        right: 3px;
+        background: #0000005f;
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+        font-weight: bold;
+        padding: 6px;
+      }
+    }
+    .title-container {
+      padding: 10px;
+      .name {
+        font-weight: bold;
+      }
+      .list-source {
+        color: var(--medium-light-text);
+        display: block;
+        font-weight: bold;
+        font-size: smaller;
+        margin: 10px 0;
+        font-family: 'Arial Narrow Bold', sans-serif;
+      }
+    }
+    .listing-content {
+      font-size: small;
+      color: var(--theme-text);
+      font-family: serif;
+      overflow: hidden;
+      padding: 0 10px;
+    }
+    .blog-url {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 5px;
+      background: #a3010140;
+      backdrop-filter: blur(5px);
+      text-align: center;
+      font-weight: bolder;
+      font-family: 'Arial Narrow Bold', sans-serif;
+      color: var(--light-text);
+      span {
+      padding: 10px 15px;
+      background: #b20202b0;
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      }
+    }
+  }
+}
+
+
+/* Footer section */
+
+.footer-container {
+  text-align: center;
+  color: white;
+  background-image: url("./assets/footer-background.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 10em;
+  z-index: 2;
+  display: flex;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .footer-bg-dimmer {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(0.3);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.footer-header {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin: 10px;
+    color: wheat;
+  }
+}
+
+.contributors {
+  display: flex;
+  justify-content: start;
+  background: #27272756;
+  padding: 20px;
+  width: 100%;
+}
+
+a {
+  text-align: center;
+  max-width: 200px;
+  padding: 10px;
+  font-size: small;
+  margin: 10px;
+  &:hover {
+    background: #27272762;
+    border-radius: 20px;
+  }
+}
+
+.profile-img {
+  border-radius: 50%;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 650px) {
+  .listing-container {
+    grid-template-columns: auto auto;
+  }
+  .listing-items {
+    max-width: 300px;
+  }
+  .page-wrapper {
+    .side-menu {
+      display: block;
+    }
+  }
+  .second-menu-section {
+    .menu-icon {
+      display: none;
+    }
+  }
+  .footer-header {
+    margin: 20px 0;
+    p {
+      max-width: 70%;
+    }
+  }
+}
+@media only screen and (min-width: 1180px) {
+  .listing-container {
+    grid-template-columns: auto auto auto;
+  }
+  .side-menu {
+    display: block;
+  }
+  .second-menu-section {
+  .menu-icon {
+    display: none;
+  }
+}
+  .footer-header {
+    margin: 20px 0;
+    p {
+      max-width: 70%;
+    }
+  }
+  .about {
+    width: 70%;
+  }
+}

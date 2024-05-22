@@ -1,0 +1,54 @@
+import '../App.css'
+import { Link } from 'react-router-dom'
+import appLogo from '../assets/crypto-plate-transparent.svg'
+import menuIcon from '../assets/menu-alt-1.svg'
+
+export default function Header() {
+
+//     // change theme background, toggle button function 
+// const toggleBtn = document.querySelector('.checkbox')
+
+// toggleBtn.addEventListener('change', function() {
+//     if(this.checked) {
+//       document.documentElement.style.setProperty('--theme-text', 'white')
+//         document.documentElement.style.setProperty('--theme-background', 'black');
+//     } else {
+//       document.documentElement.style.setProperty('--theme-background', '#fcfcfc')
+//       document.documentElement.style.setProperty('--theme-text', 'black');
+//     }
+// })
+
+  return (
+    <>
+      <section>
+        <div className="top-header">
+          <div>
+            <span className='app-logo'>
+              <img src={appLogo} alt="Logo" />
+            </span>
+          </div>
+          <div className="first-menu-section">
+            <span>
+                <Link to="/">Explore</Link>
+            </span>
+            <span>
+                <Link to="/earn-crypto">Earn</Link>
+            </span>
+            <span><Link to="/grants">Grant</Link></span>
+          </div>
+          <div className="second-menu-section">
+            <div id="button-3" className="button r">
+              <input className="checkbox" type="checkbox"/>
+              <div className="knobs"></div>
+              <div className="layer"></div>
+            </div>
+            <div className='menu-icon'>
+              <img src={menuIcon} alt="Menu" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
