@@ -37,11 +37,7 @@ export default function Header() {
             <span><Link to="/grants">Grant</Link></span>
           </div>
           <div className="second-menu-section">
-            <div id="button-3" className="button r">
-              <input className="checkbox" type="checkbox"/>
-              <div className="knobs"></div>
-              <div className="layer"></div>
-            </div>
+            
             <div className='menu-icon'>
               <img src={menuIcon} alt="Menu" />
             </div>
