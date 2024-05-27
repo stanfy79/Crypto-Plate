@@ -29,7 +29,7 @@ export default function Home() {
                         
                         </div>
                         <div className="listing-container">
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image1} alt="The Block" />
                                     <span>Blog</span>
@@ -45,7 +45,7 @@ export default function Home() {
                                     <span><a href="https://www.theblock.co/post/295204/spot-bitcoin-etf-inflows-in-may-have-made-up-for-april-outflows-analyst" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image2} alt="The Block" />
                                     <span>Blog</span>
@@ -61,7 +61,7 @@ export default function Home() {
                                     <span><a href="https://www.theblock.co/post/295190/zksync-teases-v24-upgrade-fueling-airdrop-rumors" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image3} alt="The Block" />
                                     <span>Blog</span>
@@ -77,7 +77,7 @@ export default function Home() {
                                     <span><a href="https://www.theblock.co/post/295138/memecoins-gme-roaring-kitty-spike-even-as-gamestops-stock-tumbles-back-to-earth"target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image4} alt="The Block" />
                                     <span>Blog</span>
@@ -93,7 +93,7 @@ export default function Home() {
                                     <span><a href="https://cryptoslate.com/scaramucci-says-institutional-adoption-set-to-accelerate/" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image5} alt="The Block" />
                                     <span>Blog</span>
@@ -109,7 +109,7 @@ export default function Home() {
                                     <span><a href="https://cointelegraph.com/news/how-blockchain-and-ai-can-reshape-agriculture-interview-with-dimitra" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image6} alt="The Block" />
                                     <span>Blog</span>
@@ -125,7 +125,7 @@ export default function Home() {
                                     <span><a href="https://cointelegraph.com/news/genesis-global-secures-court-approval-for-3b-payout" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image7} alt="CoinTelegraph" />
                                     <span>Blog</span>
@@ -141,7 +141,7 @@ export default function Home() {
                                     <span><a href="https://cointelegraph.com/news/web3-travel-app-turns-regional-experiences-into-mintable-nfts" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image8} alt="The Block" />
                                     <span>Blog</span>
@@ -157,7 +157,7 @@ export default function Home() {
                                     <span><a href="https://bitcoinmagazine.com/business/5-1-billion-pension-fund-cio-joins-non-profit-organization-focused-on-bitcoin-adoption" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image9} alt="The Block" />
                                     <span>Blog</span>
@@ -173,7 +173,7 @@ export default function Home() {
                                     <span><a href="https://bitcoinmagazine.com/business/1-5t-morgan-stanley-is-buying-us-spot-bitcoin-etf" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image10} alt="The Block" />
                                     <span>Blog</span>
@@ -189,7 +189,7 @@ export default function Home() {
                                     <span><a href="https://bitcoinmagazine.com/culture/china-new-frontier-bitcoin-innovation" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image11} alt="The Block" />
                                     <span>Blog</span>
@@ -205,7 +205,7 @@ export default function Home() {
                                     <span><a href="https://cointelegraph.com/news/blockchain-gaming-investments-1-billion-nft-web3-april" target='_blank'>Visit</a></span>
                                 </div>
                             </div>
-                            <div className="listing-items">
+                            <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
                                     <img src={listingImages.image12} alt="The Block" />
                                     <span>Blog</span>

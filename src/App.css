@@ -13,6 +13,20 @@ body {
   color: white;
 }
 
+/* aminate elements when within viewport */
+/* .show-scroll-animaton {
+  scale: .8;
+  transition: all .1s ease;
+}
+.scroll-animaton {
+  scale: 1;
+}
+@media(prefers-reduced-motion) {
+   .show-scroll-animaton {
+       transition: none;
+   }
+} */
+
  /* style for top header */
 .top-header {
   display: flex;
@@ -166,7 +180,7 @@ body {
     overflow-y: hidden;
     transition: all .5s ease-in-out;
     &:hover {
-      box-shadow: 5px 10px 30px #b2020238, -5px -10px 30px #b2020238;
+      box-shadow: 10px 10px 30px #b2020238, -10px -10px 30px #b2020238;
     }
     .listing-head {
       width: 100%;
