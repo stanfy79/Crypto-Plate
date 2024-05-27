@@ -1,7 +1,8 @@
 import '../App.css'
 import { Link } from 'react-router-dom'
 import appLogo from '../assets/crypto-plate-transparent.svg'
-import menuIcon from '../assets/menu-alt-1.svg'
+import menuIcon1 from '../assets/menu-alt-1.svg'
+import menuIcon2 from '../assets/arrow-left-r.svg'
 
 export default function Header() {
 
@@ -17,6 +18,19 @@ export default function Header() {
 //       document.documentElement.style.setProperty('--theme-text', 'black');
 //     }
 // })
+
+function displayMenu() {
+  const menuContainer = document.querySelector(".side-menu")
+  const menuIconState = document.querySelector(".menu-icon img")
+  
+  if(menuContainer.style.right === "-100%") {
+    menuContainer.style.right = "0%";
+    menuIconState.setAttribute("src", menuIcon2)
+  } else {
+    menuContainer.style.right = "-100%";
+    menuIconState.setAttribute("src", menuIcon1)
+  }
+}
 
   return (
     <>
@@ -38,9 +52,9 @@ export default function Header() {
           </div>
           <div className="second-menu-section">
             
-            <div className='menu-icon'>
-              <img src={menuIcon} alt="Menu" />
-            </div>
+          <div className='menu-icon' onClick={displayMenu}>
+            <img src={menuIcon1} alt="Menu" />
+          </div>
           </div>
         </div>
       </section>

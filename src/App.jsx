@@ -9,6 +9,9 @@ import './App.css'
 
 function App() {
 
+  document.addEventListener('load', () => {
+    
+  })
 
   return (
     <>
@@ -21,6 +24,10 @@ function App() {
               <p>How to Explore?</p>
               <span><b>Home Page: </b>Find blog articles that tells you all about crypto.</span>
             </div>
+            <div className="directions">
+              <p>How to Earn?</p>
+              <span><b>Earn: </b>Scan through the list to discover different organizations that allows you to mine crypto via their playform.</span>
+            </div>
           </div>
         </div>
       
@@ -30,9 +37,9 @@ function App() {
             <Route path="/earn-crypto" element={<Earn/>} />
             <Route path="/grants" element={<Grant/>} />
           </Routes>
+          <Footer />
         </div>
       </div>
-      <Footer />
     </>
   )
 }
