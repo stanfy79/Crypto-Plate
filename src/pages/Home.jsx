@@ -1,7 +1,34 @@
 import '../App.css'
 import applogo from '../assets/crypto-plate-transparent.svg'
+import { useEffect } from 'react';
 
 export default function Home() {
+        
+        useEffect(() => {
+          const script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.async = true;
+          script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
+          script.innerHTML = JSON.stringify({
+            symbols: [
+              { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" },
+              { proName: "BITSTAMP:ETHUSD", title: "Ethereum" },
+              { description: "Ton", proName: "CRYPTOCAP:TON" },
+              { description: "Injective", proName: "CRYPTO:INJUSD" },
+              { description: "Solana", proName: "CRYPTOCAP:SOL" },
+              { description: "Notcoin", proName: "CRYPTO:NOTUSD" },
+              { description: "", proName: "CRYPTOCAP:OP" },
+              { description: "Bonk", proName: "BYBIT:BONKUSDT" }
+            ],
+            showSymbolLogo: true,
+            isTransparent: true,
+            displayMode: "regular",
+            colorTheme: "dark",
+            locale: "en"
+          });
+          document.getElementsByClassName('tradingview-widget-container__widget')[0].appendChild(script);
+        }, []);
+      
 
     const listingImages =  {
         image1: "https://www.tbstat.com/wp/uploads/2024/05/20240509_Bitcoin_News_4-1200x675.jpg?isSafari=false&isMobile=false",
@@ -20,6 +47,9 @@ export default function Home() {
 
     return (
         <>
+                    <div className="tradingview-widget-container">
+                        <div className="tradingview-widget-container__widget"></div>
+                    </div>
                     <div className="introductions">
                         <span className="about">
                         <img src={applogo} alt="Logo" className='app-logo2' />
