@@ -171,10 +171,10 @@ body {
   .listing-items {
     width: 100%;
     position: relative;
+    background: #111111;
     margin: 0 auto;
-    border: 1px solid #9d222286;
-    border-radius: 20px;
-    height: 600px;
+    border-radius: 7px;
+    height: 400px;
     max-width: 350px;
     color: var(--theme-text);
     overflow-y: hidden;
@@ -186,9 +186,8 @@ body {
       width: 100%;
       img {
         width: 100%;
-        height: 200px;
+        max-height: 200px;
         object-fit: cover;
-        border-radius: 20px 20px 0 0;
       }
       span {
         position: absolute;
@@ -227,9 +226,8 @@ body {
       width: 100%;
       position: absolute;
       bottom: 0;
-      padding: 15px;
-      background: #a3010140;
-      backdrop-filter: blur(5px);
+      padding: 10px;
+      backdrop-filter: blur(2px);
       text-align: center;
       font-weight: bolder;
       font-family: 'Arial Narrow Bold', sans-serif;

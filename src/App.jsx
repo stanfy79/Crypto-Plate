@@ -39,7 +39,7 @@ animateContent.forEach((el) => observer.observe(el));
             </div>
           </div>
         </div>
-      
+        
         <div className="main-content">
           <Routes>
             <Route index element={<Home/>} />
