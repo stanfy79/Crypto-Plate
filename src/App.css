@@ -182,25 +182,29 @@ body {
   margin-top: 2rem;
 }
 .chartview-widget-container {
-  background-color: #320101;
+  background: #320101;
   height: 500px;
   position: relative;
   margin: auto;
   overflow-y: hidden;
   border-radius: 20px;
-  animation: loading 3s linear infinite alternate;
+  animation: loading 1.5s linear infinite alternate;
   width: 95%;
 }
 @keyframes loading {
-  0% {
-    backgroud-color: #320101;
+  from {
+    background: #320101;
   }
-  100% {
-    backgroud-color: #1d1d1d;
+  to {
+    background: #0b0505;
   }
 }
 .trading-view {
   width: 100%;
+  h2 {
+    text-align: center;
+    color: #c0c0c0;
+  }
 }
 .introductions {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -244,7 +248,7 @@ body {
     overflow-y: hidden;
     transition: all .5s ease-in-out;
     &:hover {
-      box-shadow: 10px 10px 30px #b2020238, -10px -10px 30px #b2020238;
+      box-shadow: 10px 10px 30px #39393938, -10px -10px 30px #39393938;
     }
     .listing-head {
       width: 100%;
@@ -331,7 +335,7 @@ body {
   .footer-bg-dimmer {
     width: 100%;
     height: 100%;
-    backdrop-filter: brightness(0.2);
+    backdrop-filter: brightness(0.1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
@@ -378,7 +382,7 @@ a {
 .profile-img {
   border-radius: 50%;
   padding: 10px;
-  width: 70px;
+  width: z0px;
   height: 70px;
 }
 

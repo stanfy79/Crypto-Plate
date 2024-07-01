@@ -28,12 +28,17 @@ export default  function Grant() {
     document.getElementsByClassName('tradingview-widget-container__widget')[0].appendChild(script);
   }, []);
 
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
   return (
     <>
     <div className="tradingview-widget-container">
         <div className="tradingview-widget-container__widget"></div>
      </div>
-     <h1>You can apply for grants here</h1>
+     <h1>You can see list of grants here</h1>
      <h3>Comming Soon</h3>
     </>
   )

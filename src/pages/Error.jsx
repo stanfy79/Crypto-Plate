@@ -3,6 +3,11 @@ import '../App.css'
 export default function Error() {
 
 
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+
     return (
         <>
             <div className="error-container">

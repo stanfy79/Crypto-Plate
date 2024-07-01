@@ -49,6 +49,11 @@ export default function Home() {
         image12: "https://www.tbstat.com/wp/uploads/2023/08/20230726_DeFi_News-1200x675.jpg",
     }
 
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+
     return (
         <>
                     <div className="tradingview-widget-container">

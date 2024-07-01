@@ -14,6 +14,11 @@ export default function Earn() {
       image: "",
     }
 
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+
         useEffect(() => {
           const script = document.createElement('script');
           script.type = 'text/javascript';
