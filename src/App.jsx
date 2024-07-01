@@ -1,9 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Charts from './components/Charts'
 import Home from './pages/Home'
 import Earn from './pages/Earn'
 import Grant from './pages/Grant'
+import Error from './pages/Error'
 import applogo from './assets/crypto-plate-resolution-logo.svg'
 import './App.css'
 
@@ -45,6 +47,8 @@ animateContent.forEach((el) => observer.observe(el));
             <Route index element={<Home/>} />
             <Route path="/earn-crypto" element={<Earn/>} />
             <Route path="/grants" element={<Grant/>} />
+            <Route path="/crypto-chart" element={<Charts/>} />
+            <Route path='*' element={<Error/>} />
           </Routes>
           <Footer />
         </div>

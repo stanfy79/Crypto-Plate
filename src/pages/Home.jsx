@@ -1,5 +1,6 @@
 import '../App.css'
 import applogo from '../assets/crypto-plate-transparent.svg'
+import Charts from '../components/Charts'
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -27,6 +28,9 @@ export default function Home() {
             locale: "en"
           });
           document.getElementsByClassName('tradingview-widget-container__widget')[0].appendChild(script);
+
+
+
         }, []);
       
 
@@ -56,8 +60,11 @@ export default function Home() {
                             Welcome to our Crypto Hub! 🚀
                             Here, you'll find the latest insights and detailed guides on everything crypto-related. Whether you're interested in the newest trends in cryptocurrency, seeking grants to fund your blockchain projects, or exploring platforms to earn and mine crypto, we've got you covered. Dive into our blog posts and stay ahead in the ever-evolving world of digital currencies. 💎✨
                         </span>
-                        
-                        </div>
+                    </div>
+                    <div className='trading-view'>
+                        <h2>Advanced Real-Time Chart</h2>
+                        <Charts />
+                    </div>
                         <div className="listing-container">
                             <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">
