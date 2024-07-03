@@ -66,10 +66,27 @@ export default function Home() {
                             Here, you'll find the latest insights and detailed guides on everything crypto-related. Whether you're interested in the newest trends in cryptocurrency, seeking grants to fund your blockchain projects, or exploring platforms to earn and mine crypto, we've got you covered. Dive into our blog posts and stay ahead in the ever-evolving world of digital currencies. 💎✨
                         </span>
                     </div>
+                    <div className="introductions wormhole-intro">
+                        <h2>Wolmhole A Multichain Application</h2>
+                        <span>Wormhole is not a blockchain itself, it provides a means of communication between blockchains or rollups.</span>
+                        <span>Wormhole is not a token bridge, though there are protocols built on Wormhole that serve this purpose.</span>
+                        <Link to="/swap">Try it Now</Link>
+                    </div>
+
                     <div className='trading-view'>
                         <h2>Advanced Real-Time Chart</h2>
                         <Charts />
                     </div>
+
+                    <div className="introductions wormhole-detail">
+                        <h3>What can Wormhole be used for?</h3>
+                        <ul>
+                            <li><b>Cross Chain Exchange:</b> Using Wormhole Connect, a developer can build an exchange that allows deposits from any Wormhole connected chain, massively increasing the liquidity their users can access.</li>
+                            <li><b>Cross Chain Governance:</b> If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole to communicate votes cast on their disparate chains to the voting chain.</li>
+                            <li><b>Cross Chain Game:</b> A game could be built and played on a performant network like Solana, and it's rewards issued as NFTs on a different network, for example Ethereum.</li>
+                        </ul>
+                    </div>
+
                         <div className="listing-container">
                             <div className="listing-items show-scroll-animaton">
                                 <div className="listing-head">

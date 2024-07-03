@@ -5,24 +5,13 @@ import Charts from './components/Charts'
 import Home from './pages/Home'
 import Earn from './pages/Earn'
 import Grant from './pages/Grant'
+// import Swap from './pages/Token-swap'
 import Error from './pages/Error'
 import applogo from './assets/crypto-plate-resolution-logo.svg'
 import './App.css'
 
 function App() {
 
-  const observer = new IntersectionObserver((entries) => {
-    console.log(entries);
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add("scroll-animaton");
-        } else {
-            entry.target.classList.remove("scroll-animaton");
-        }
-    });
-});
-const animateContent = document.querySelectorAll(".show-scroll-animaton");
-animateContent.forEach((el) => observer.observe(el));
 
   return (
     <>
@@ -48,6 +37,7 @@ animateContent.forEach((el) => observer.observe(el));
             <Route path="/earn-crypto" element={<Earn/>} />
             <Route path="/grants" element={<Grant/>} />
             <Route path="/crypto-chart" element={<Charts/>} />
+            {/* <Route path="/swap" element={<Swap/>} /> */}
             <Route path='*' element={<Error/>} />
           </Routes>
           <Footer />

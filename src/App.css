@@ -31,7 +31,7 @@ body {
 .error-container {
   width: 80%;
   height: 300px;
-  margin: 10% auto;
+  margin: 15% auto;
   align-items: center;
   background: #1d1d1d;
   display: flex;
@@ -98,23 +98,18 @@ body {
   justify-content: start;
   width: 50%;
   margin: 0 13px;
-  span {
+  span > Link {
     margin: 0 7px;
-    text-decoration-line: none;
     color: aqua;
     font-size: 95%;
     &:hover {
-      color: #a3c0c4;
+      color: #aab0b0;
     }
-  }
-  &::after {
-    content: "|";
-    color: #00e1ff;
   }
 }
 .second-menu-section {
   color: var(--theme-text);
-  width: 100%;
+  width: 40%;
   display: flex;
   justify-content: end;
   .menu-icon {
@@ -180,6 +175,7 @@ body {
   height: 40px;
   overflow-y: hidden;
   margin-top: 2rem;
+  animation: loading 1s linear infinite alternate;
 }
 .chartview-widget-container {
   background: #320101;
@@ -188,7 +184,7 @@ body {
   margin: auto;
   overflow-y: hidden;
   border-radius: 20px;
-  animation: loading 1.5s linear infinite alternate;
+  animation: loading 1s linear infinite alternate;
   width: 95%;
 }
 @keyframes loading {
@@ -196,7 +192,7 @@ body {
     background: #320101;
   }
   to {
-    background: #0b0505;
+    background: #444444;
   }
 }
 .trading-view {
@@ -218,6 +214,31 @@ body {
   margin: 50px auto;
   border-radius: 20px;
 }
+.wormhole-intro {
+  background: #1d1d1d;
+  display: flex;
+  flex-flow: column wrap;
+  h2 {
+    color: aqua;
+  }
+  span {
+    margin: 5px;
+  }
+}
+.wormhole-detail {
+  background: #000000;
+  display: flex;
+  flex-flow: column wrap;
+  span {
+    margin: 5px;
+  }
+  ul > li {
+    margin: 3px;
+    b {
+      color: #8d0000;
+    }
+  }
+}
 .about {
   color: var(--light-text);
   line-height: 30px;
@@ -231,11 +252,11 @@ body {
 .listing-container {
   display: grid;
   grid-template-columns: auto;
-  gap: 100px 20px;
+  gap: 40px 20px;
   margin-top: 5em;
   align-items: center;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   .listing-items {
     width: 100%;
     position: relative;
@@ -248,7 +269,7 @@ body {
     overflow-y: hidden;
     transition: all .5s ease-in-out;
     &:hover {
-      box-shadow: 10px 10px 30px #39393938, -10px -10px 30px #39393938;
+      box-shadow: 10px 10px 30px #95959538, -10px -10px 30px #95959538;
     }
     .listing-head {
       width: 100%;

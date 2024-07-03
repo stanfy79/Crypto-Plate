@@ -4,14 +4,12 @@ import { useEffect } from 'react';
 export default function Earn() {
 
     const earnImage = {
-      image1: "https://cdn-bplcd.nitrocdn.com/yYxFdwLqsIdKMsfCFJkddYGFYoJKEdpp/assets/images/optimized/rev-8a81c00/www.cryptonewsz.com/wp-content/uploads/2023/09/iq-mining-smart-contracts-for-profitability-768x460.png",
+      image1: "https://t3.ftcdn.net/jpg/04/68/35/26/360_F_468352674_XFsZXwhCBrX85gtKYJfX4ZLhC0NrIXA9.jpg",
       image2: "http://ecos.am/wp-content/uploads/2024/01/1-1-768x512.webp",
       image3: "https://hashing24.com/i/hashing-logo.png",
       image4: "https://public.bnbstatic.com/static/academy/uploads-original/ad75b7b113ac422080d6ce73d379de6e.png",
       image5: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWcceu1Q7pBp1XgOG7dM9tIxzzwGNr1QGb9KMlBJ_EOA&s",
       image6: "https://coinlaunch.space/media/images/2/7/8/5/2785.sd2hmp.1920.jpeg",
-      image: "",
-      image: "",
     }
 
     window.scrollTo({
@@ -48,9 +46,9 @@ export default function Earn() {
   return (
     <>
     <div className="tradingview-widget-container">
-                        <div className="tradingview-widget-container__widget"></div>
-                    </div>
-     <h1>You can earn here</h1>
+        <div className="tradingview-widget-container__widget"></div>
+    </div>
+     <h1>Find list of platforms you can earn with</h1>
 
      <div className="listing-container">
         <div className="listing-items">
