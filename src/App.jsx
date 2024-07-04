@@ -37,7 +37,7 @@ function App() {
             <Route path="/earn-crypto" element={<Earn/>} />
             <Route path="/grants" element={<Grant/>} />
             <Route path="/crypto-chart" element={<Charts/>} />
-            {/* <Route path="/swap" element={<Swap/>} /> */}
+            
             <Route path='*' element={<Error/>} />
           </Routes>
           <Footer />
