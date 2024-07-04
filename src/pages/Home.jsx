@@ -70,7 +70,7 @@ export default function Home() {
                         <h2>Wolmhole A Multichain Application</h2>
                         <span>Wormhole is not a blockchain itself, it provides a means of communication between blockchains or rollups.</span>
                         <span>Wormhole is not a token bridge, though there are protocols built on Wormhole that serve this purpose.</span>
-                        <Link to="/swap">Try it Now</Link>
+                        
                     </div>
 
                     <div className='trading-view'>
