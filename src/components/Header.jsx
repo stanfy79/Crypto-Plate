@@ -48,7 +48,10 @@ function displayMenu() {
             <span>
                 <Link to="/earn-crypto">Earn</Link>
             </span>
-            <span><Link to="/grants">Grant</Link></span>
+            <span>
+              <Link to="/grants">Grant</Link>
+            </span>
+            <span><Link to="/multiswap">Multi Swap</Link></span>
           </div>
           <div className="second-menu-section">
             

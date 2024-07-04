@@ -2,6 +2,7 @@ import '../App.css'
 import applogo from '../assets/crypto-plate-transparent.svg'
 import Charts from '../components/Charts'
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom'
 
 export default function Home() {
         
@@ -70,7 +71,9 @@ export default function Home() {
                         <h2>Wolmhole A Multichain Application</h2>
                         <span>Wormhole is not a blockchain itself, it provides a means of communication between blockchains or rollups.</span>
                         <span>Wormhole is not a token bridge, though there are protocols built on Wormhole that serve this purpose.</span>
-                        
+                        <div>Try it here 
+                        <Link to="/multiswap" className='quick-swap-links'>Multi Swap</Link>
+                        </div>
                     </div>
 
                     <div className='trading-view'>
@@ -85,6 +88,9 @@ export default function Home() {
                             <li><b>Cross Chain Governance:</b> If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole to communicate votes cast on their disparate chains to the voting chain.</li>
                             <li><b>Cross Chain Game:</b> A game could be built and played on a performant network like Solana, and it's rewards issued as NFTs on a different network, for example Ethereum.</li>
                         </ul>
+                        <div>Try it here 
+                        <Link to="/multiswap" className='quick-swap-links'>Multi Swap</Link>
+                        </div>
                     </div>
 
                         <div className="listing-container">

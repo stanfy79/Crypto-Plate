@@ -5,7 +5,7 @@ import Charts from './components/Charts'
 import Home from './pages/Home'
 import Earn from './pages/Earn'
 import Grant from './pages/Grant'
-// import Swap from './pages/Token-swap'
+import Swap from './pages/TokenSwap'
 import Error from './pages/Error'
 import applogo from './assets/crypto-plate-resolution-logo.svg'
 import './App.css'
@@ -37,6 +37,7 @@ function App() {
             <Route path="/earn-crypto" element={<Earn/>} />
             <Route path="/grants" element={<Grant/>} />
             <Route path="/crypto-chart" element={<Charts/>} />
+            <Route path="/multiswap" element={<Swap/>} />
             
             <Route path='*' element={<Error/>} />
           </Routes>
