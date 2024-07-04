@@ -84,7 +84,6 @@ body {
   justify-self: baseline;
   width: 40px;
   height: 40px;
-  align-self: center;
 }
 .menu-icon {
   transition: all .3s ease-in;
@@ -93,21 +92,23 @@ body {
   }
 }
 .first-menu-section {
-  color: var(--theme-text);
   display: flex;
   justify-content: start;
+  text-wrap: nowrap;
+  overflow-x: auto;
   width: 80%;
-  span > Link {
-    margin: 0 5px;
-    color: aqua;
+  span {
+    margin: 0;
     font-size: 95%;
     &:hover {
       color: #aab0b0;
     }
   }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .second-menu-section {
-  color: var(--theme-text);
   width: 10%;
   display: flex;
   justify-content: end;
