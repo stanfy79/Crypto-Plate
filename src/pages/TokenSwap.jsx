@@ -29,10 +29,10 @@ const customTheme = {
   success: green,
   warning: orange,
   button: {
-    primary: 'rgba(255, 255, 255, 0.2)',
+    primary: lightblue,
     primaryText: "#ffffff",
     disabled: 'rgba(255, 255, 255, 0.1)',
-    disabledText: 'rgba(255, 255, 255, 0.4)',
+    disabledText: 'rgba(0, 0, 0)',
     action: orange[300],
     actionText: "#000000",
     hover: 'rgba(255, 255, 255, 0.7)',
