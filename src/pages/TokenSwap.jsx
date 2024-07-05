@@ -38,7 +38,7 @@ const customTheme = {
   },
   card: {
     background: "#1f1f1f5f",
-    secondary: "white",
+    secondary: "gray",
     elevation: "none",
   },
   popover: {
