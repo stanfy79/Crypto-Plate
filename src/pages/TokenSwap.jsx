@@ -29,7 +29,7 @@ const customTheme = {
   success: green,
   warning: orange,
   button: {
-    primary: 'rgba(255, 255, 255, 1)',
+    primary: 'rgba(255, 255, 255, 0.2)',
     primaryText: "#ffffff",
     disabled: 'rgba(255, 255, 255, 0.1)',
     disabledText: 'rgba(255, 255, 255, 0.4)',
