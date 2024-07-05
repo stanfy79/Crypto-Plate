@@ -7,6 +7,11 @@ import grey from "@mui/material/colors/grey";
 import green from "@mui/material/colors/green";
 import orange from "@mui/material/colors/orange";
 
+window.scrollTo({
+  top: 0,
+  behavior: 'smooth'
+});
+
 const customTheme = {
   mode: 'dark',
   primary: grey,
@@ -37,7 +42,7 @@ const customTheme = {
     select: "#5b5b5b",
   },
   card: {
-    background: "#1f1f1f5f",
+    background: "#brown",
     secondary: "gray",
     elevation: "none",
   },
@@ -55,10 +60,6 @@ const customTheme = {
   }
 };
 
-window.scrollTo({
-  top: 0,
-  behavior: 'smooth'
-});
 
 export default function App() {
   return <WormholeConnect theme={customTheme} />;
