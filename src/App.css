@@ -234,9 +234,19 @@ body {
   color: white;
   background: #490000;
   font-size:  medium;
+  animation-timeline: veiw();
+  animation: display;
   display: flex;
   margin: 50px auto;
   border-radius: 20px;
+}
+@keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+   opacity: 1;
+  }
 }
 .wormhole-intro {
   background: #1d1d1d;
@@ -294,6 +304,8 @@ body {
     max-width: 350px;
     color: var(--theme-text);
     overflow-y: hidden;
+    animation: display;
+    animation-timeline: view();
     transition: all .5s ease-in-out;
     &:hover {
       box-shadow: 10px 10px 30px #95959538, -10px -10px 30px #95959538;
