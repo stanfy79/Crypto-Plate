@@ -57,6 +57,7 @@ body {
     padding: 15px;
     &:hover {
       background: #222222;
+      color: #009292;
     }
     a {
       color: #ffffff;
@@ -69,24 +70,33 @@ body {
 .top-header {
   display: flex;
   position: fixed;
-  background: #a3010123;
-  backdrop-filter: blur(10px);
-  z-index: 2;
-  align-items: center;
+  background: transparent;
   justify-content: center;
-  padding: 0 10px;
-  top: 0;
-  width: 30%;
+  z-index: 2;
+  top: 1rem;
+  width: 100%;
+}
+.top-header-child {
+  backdrop-filter: blur(10px);
   height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  width: 70%;
   border-radius: 20px;
+  background: #8703032a;
 }
 .app-logo {
   display: flex;
+  position: absolute;
   justify-self: center;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
 }
 .menu-icon {
+  position: absolute;
+  right: 10px;
   transition: all .3s ease-in;
   &:hover img {
     scale: .8;
@@ -98,14 +108,19 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  top: 3rem;
+  div img {
+    width: 150px;
+  }
   span {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 3px 5px;
-    margin: 10px 0;
+    padding: 10px 5px;
     letter-spacing: 1px;
     position: relative;
+    text-align: center;
+    width: 100%;
     &:hover {
-      color: #009292;
+      color: #a5a5a5;
     }
   }
   &::-webkit-scrollbar {
@@ -114,23 +129,22 @@ body {
 }
 .effect::before {
   content: "";
-  width: 100%;
-  height: 2px;
+  width: 3px;
+  height: 100%;
   border-radius: 10px;
   background: #940000;
   position: absolute;
   bottom: 0px;
   left: 0;
-  transform: scaleX(0);
+  transform: scaleY(0);
   transition: all .4s ease;
 }
 .effect:hover::before {
-  transform: scaleX(1);
+  transform: scaleY(1);
 }
 .second-menu-section {
-  width: 10%;
   display: flex;
-  justify-content: end;
+  align-content: center;
   .menu-icon {
     display: flex;
     align-self: end;
@@ -154,8 +168,10 @@ body {
   background: #0e0e0e;
   overflow-x: hidden;
   .side-menu {
-    width: 75%;
-    height: 100%;
+    width: 65%;
+    top: 14%;
+    border-radius: 20px;
+    height: 83.5%;
     background: #000000;
     position: fixed;
     z-index: 2;
@@ -164,12 +180,12 @@ body {
     transition: all .4s step-start;
     padding: 10px 30px;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     border-left: 1px solid rgb(108, 108, 108);
   }
   .main-content {
     width: 100%;
+    margin-top: 3rem;
   }
 }
 

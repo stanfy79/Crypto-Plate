@@ -57,6 +57,7 @@ export default function Home() {
 
     return (
         <>
+        
                     <div className="tradingview-widget-container">
                         <div className="tradingview-widget-container__widget"></div>
                     </div>

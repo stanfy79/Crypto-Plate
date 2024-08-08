@@ -12,15 +12,3 @@ html, body {
   margin: 0;
 }
 
-a {
-  color: #ffffff;
-  text-decoration-line: none;
-}
-a:active {
-  color: #ffffff;
-  text-decoration-line: none;
-}
-a:visited {
-  color: #ffffff;
-  text-decoration-line: none;
-}

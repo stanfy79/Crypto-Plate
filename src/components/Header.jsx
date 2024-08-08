@@ -36,10 +36,15 @@ function displayMenu() {
     <>
       <section>
         <div className="top-header">
-          <div>
+          <div className="top-header-child">
             <span className='app-logo'>
               <img src={appLogo} alt="Logo" />
             </span>
+          <div className="second-menu-section">
+            <div className='menu-icon' onClick={displayMenu}>
+              <img src={menuIcon1} alt="Menu" />
+            </div>
+          </div>
           </div>
         </div>
       </section>
