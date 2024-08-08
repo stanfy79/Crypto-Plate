@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Header from './components/Header'
+import SideMenu from './components/SideMenu'
 import Footer from './components/Footer'
 import Charts from './components/Charts'
 import Home from './pages/Home'
@@ -7,7 +9,6 @@ import Earn from './pages/Earn'
 import Grant from './pages/Grant'
 import Swap from './pages/TokenSwap'
 import Error from './pages/Error'
-import applogo from './assets/crypto-plate-resolution-logo.svg'
 import './App.css'
 
 function App() {
@@ -18,17 +19,7 @@ function App() {
       <Header />
       <div className="page-wrapper">
         <div className="side-menu">
-          <h2><img src={applogo} alt="Logo" /></h2>
-          <div className="menu-intro">
-            <div className="directions">
-              <p>How to Explore?</p>
-              <span><b>Home Page: </b>Find blog articles that tells you all about crypto.</span>
-            </div>
-            <div className="directions">
-              <p>How to Earn?</p>
-              <span><b>Earn: </b>Scan through the list to discover different organizations that allows you to mine crypto via their playform.</span>
-            </div>
-          </div>
+          <SideMenu />
         </div>
         
         <div className="main-content">

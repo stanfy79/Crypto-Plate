@@ -69,19 +69,20 @@ body {
 .top-header {
   display: flex;
   position: fixed;
-  background: #a301012d;
+  background: #a3010123;
   backdrop-filter: blur(10px);
   z-index: 2;
   align-items: center;
+  justify-content: center;
   padding: 0 10px;
   top: 0;
-  width: 100%;
-  height: 50px;
-  border-bottom: 1px solid gray;
+  width: 30%;
+  height: 80px;
+  border-radius: 20px;
 }
 .app-logo {
   display: flex;
-  justify-self: baseline;
+  justify-self: center;
   width: 40px;
   height: 40px;
 }
@@ -93,17 +94,18 @@ body {
 }
 .first-menu-section {
   display: flex;
-  justify-content: start;
-  text-wrap: nowrap;
-  overflow-x: auto;
-  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   span {
-    margin: 0;
-    font-size: 95%;
-    padding: 13px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 3px 5px;
+    margin: 10px 0;
+    letter-spacing: 1px;
     position: relative;
     &:hover {
-      color: #aab0b0;
+      color: #009292;
     }
   }
   &::-webkit-scrollbar {
@@ -115,7 +117,7 @@ body {
   width: 100%;
   height: 2px;
   border-radius: 10px;
-  background: #fff;
+  background: #940000;
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -151,37 +153,20 @@ body {
   width: 100%;
   background: #0e0e0e;
   overflow-x: hidden;
-  margin-top: 5%;
   .side-menu {
     width: 75%;
     height: 100%;
     background: #000000;
     position: fixed;
-    top: 50px;
     z-index: 2;
     right: -100%;
     display: flex;
     transition: all .4s step-start;
     padding: 10px 30px;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     border-left: 1px solid rgb(108, 108, 108);
-    .menu-intro {
-      .directions {
-        p {
-          color: #a30101;
-          font-family: Impact;
-        }
-        span {
-          color: var(--medium-light-text);
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          font-size: 90%;
-          b {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-          }
-        }
-      }
-    }
   }
   .main-content {
     width: 100%;
